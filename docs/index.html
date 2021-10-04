@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-f5660e15.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-328f644b.js">
+		<link rel="modulepreload" href="/_app/layout.svelte-e4f65e48.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-3b9e3064.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-63a19cdd.css">
+
+		<script type="module">
+			import { start } from "/_app/start-f5660e15.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/layout.svelte-e4f65e48.js"),
+						import("/_app/pages/index.svelte-3b9e3064.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header class="flex is-size-2 is-justify-content-center has-background-info-dark has-text-white mb-4 svelte-1rilqqs"><h2>ScoreBoard</h2>
+</header>
+<div class="container"><form><label for="name" class="label">Name</label>
+    <input id="name" type="text" class="input" placeholder="Player Name" value="">
+
+    <label for="score" class="label">Score</label>
+    <input type="number" id="score" class="input" value="0">
+
+    <button class="button is-info mt-2 is-fullwidth">Submit</button></form>
+
+<button class="button is-warning mt-2 is-fullwidth mb-4">Reset</button>
+
+    <span>No Players...</span></div>
+
+
+
+			
+		</div>
+	</body>
+</html>
