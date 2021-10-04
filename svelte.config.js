@@ -4,7 +4,10 @@ import adapter from '@sveltejs/adapter-static'
 const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
+		paths: {
+			base: '/scoreboard'
+		},
+		appDir: 'app_',
 		adapter: adapter({
 			pages: 'docs',
 			assets: 'docs',
