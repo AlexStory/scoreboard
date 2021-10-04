@@ -6,6 +6,8 @@ Everything you need to build a Svelte project, powered by [`create-svelte`](http
 
 If you're seeing this, you've probably already done this step. Congrats!
 
+Designed to build to a static /docs folder for ghpages
+
 ```bash
 # create a new project in the current directory
 npm init svelte@next
